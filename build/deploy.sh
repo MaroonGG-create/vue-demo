@@ -23,7 +23,7 @@ cd ${dist_dir}
 npm install
 # 删除旧的dist文件
 rm -rf dist
-npm run build:prod
+npm run build
 # 将dist目录打包到nginx/html/teacher目录下
 cd ${dist_dir}
 tar -zcvf "${teacher_dir}/${tar_name}" *
